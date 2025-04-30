@@ -73,7 +73,7 @@ nav a:hover {
     filter: blur(10px);
   }
   100% {
-    filter: blur(3px); /* Final permanent blur */
+    filter: blur(7px); /* Final permanent blur */
   }
 }
 
