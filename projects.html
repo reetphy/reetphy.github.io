@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Data Analysis Projects</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 2em;
+    }
+
+    .project-card {
+      background: white;
+      padding: 1.5em;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .project-card:hover {
+      transform: scale(1.02);
+    }
+
+    .project-title {
+      font-size: 1.25em;
+      font-weight: bold;
+      margin-bottom: 0.5em;
+    }
+
+    .project-tools {
+      font-size: 0.9em;
+      color: #666;
+      margin-bottom: 0.5em;
+    }
+
+    .project-description {
+      margin-bottom: 1em;
+    }
+
+    .project-links a {
+      text-decoration: none;
+      color: white;
+      background-color: #007acc;
+      padding: 0.4em 0.8em;
+      border-radius: 5px;
+      margin-right: 0.5em;
+      font-size: 0.9em;
+    }
+
+    .project-links a:hover {
+      background-color: #005f99;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Data Analysis Projects</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.pdf" target="_blank">Resume</a>
+      <a href="certifications.html">Certifications</a>
+      <a href="publications.html">Publications</a>
+      <a href="degree.html">Education</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="projects-container">
+
+      <!-- 📊 Project 1 -->
+      <div class="project-card">
+        <div class="project-title">Investment Portfolio Tracker</div>
+        <div class="project-tools">Python · Streamlit · Plotly · yfinance</div>
+        <div class="project-description">
+          A web application to manage and visualize investment portfolios, allowing users to set up portfolios, analyze performance, and compare with benchmarks like NIFTY 50 and SENSEX.
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/reetphy/Investment-Portfolio-Tracker" target="_blank">View Code</a>
+        </div>
+      </div>
+
+      <!-- 🛍️ Project 2 -->
+      <div class="project-card">
+        <div class="project-title">Customer Segmentation using RFM Analysis</div>
+        <div class="project-tools">Python · Pandas · Seaborn · Matplotlib</div>
+        <div class="project-description">
+          Performed RFM (Recency, Frequency, Monetary) analysis on e-commerce data to segment customers, aiding in targeted marketing strategies.
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/reetphy/Customer-Segmentation-RFM-Ecommerce" target="_blank">View Code</a>
+        </div>
+      </div>
+
+      <!-- 🗃️ Project 3 -->
+      <div class="project-card">
+        <div class="project-title">Exploratory and Advanced SQL Data Analysis</div>
+        <div class="project-tools">SQL</div>
+        <div class="project-description">
+          Leveraged SQL to perform comprehensive data analysis on sales, customers, and products, including EDA and advanced analytics to uncover business insights.
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/reetphy/Exploratory-and-Advanced-SQL-Data-Analysis" target="_blank">View Code</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Reet Chandra</p>
+  </footer>
+</body>
+</html>
