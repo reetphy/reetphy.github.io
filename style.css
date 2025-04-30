@@ -55,7 +55,7 @@ nav a:hover {
   overflow: hidden;
 }
 
-/* Blurred overlay */
+/* Blurred + Dark Overlay */
 .hero::before {
   content: '';
   position: absolute;
@@ -63,22 +63,21 @@ nav a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: inherit;
-  filter: blur(10px);
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent dark layer */
+  backdrop-filter: blur(10px); /* Blur background image */
   z-index: -1;
   animation: blurFade 2s ease-in-out forwards;
 }
 
-/* Animation that reduces blur */
+/* Animation: Reduce blur slightly after load */
 @keyframes blurFade {
   from {
-    filter: blur(10px);
+    backdrop-filter: blur(10px);
   }
   to {
-    filter: blur(3px);
+    backdrop-filter: blur(3px);
   }
 }
-
 
 .hero-content h2 {
   font-size: 3.5em;
