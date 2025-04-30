@@ -92,6 +92,44 @@ nav a:hover {
   }
 }
 
+/* Main Content Section (Left and Right Panels) */
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 20px;
+  margin-top: 3em;
+}
+
+.left-panel {
+  flex: 1;
+  text-align: center;
+  padding-right: 30px;
+}
+
+.left-panel img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.right-panel {
+  flex: 2;
+}
+
+.right-panel h2 {
+  font-size: 2.5em;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+.right-panel p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 /* About Me Section */
 .about-me {
   text-align: center;
@@ -184,5 +222,16 @@ footer a:hover {
 
   .about-me p {
     font-size: 1em;
+  }
+
+  /* Adjust main container for smaller screens */
+  .main-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .left-panel, .right-panel {
+    flex: none;
+    margin-bottom: 20px;
   }
 }
