@@ -52,8 +52,10 @@ nav a:hover {
   align-items: center;
   flex-direction: column;
   position: relative;
+  overflow: hidden;
 }
 
+/* Blurred overlay */
 .hero::before {
   content: '';
   position: absolute;
@@ -64,18 +66,19 @@ nav a:hover {
   background: inherit;
   filter: blur(10px);
   z-index: -1;
-  animation: blurTransition 2s ease-in-out forwards;
+  animation: blurFade 2s ease-in-out forwards;
 }
 
-/* Animation to reduce blur */
-@keyframes blurTransition {
-  0% {
+/* Animation that reduces blur */
+@keyframes blurFade {
+  from {
     filter: blur(10px);
   }
-  100% {
-    filter: blur(7px); /* Final permanent blur */
+  to {
+    filter: blur(3px);
   }
 }
+
 
 .hero-content h2 {
   font-size: 3.5em;
