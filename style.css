@@ -40,9 +40,8 @@ nav a:hover {
   color: #007acc;
 }
 
-/* Hero Section */
 .hero {
-  background: url('assets/images/hero-bg-3.jpg') no-repeat center center/cover;
+  position: relative;
   color: white;
   text-align: center;
   padding: 6em 2em;
@@ -51,11 +50,10 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: relative;
   overflow: hidden;
 }
 
-/* Blurred + Dark Overlay */
+/* Background blur animation */
 .hero::before {
   content: '';
   position: absolute;
@@ -63,21 +61,37 @@ nav a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* Semi-transparent dark layer */
-  backdrop-filter: blur(10px); /* Blur background image */
-  z-index: -1;
-  animation: blurFade 2s ease-in-out forwards;
+  background-image: url('assets/images/hero-bg-3.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+  transform: scale(1.05);
+  animation: unblur 3s ease forwards;
+  z-index: -2;
 }
 
-/* Animation: Reduce blur slightly after load */
-@keyframes blurFade {
-  from {
-    backdrop-filter: blur(10px);
+/* Dark overlay stays */
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+/* Keyframes to animate blur */
+@keyframes unblur {
+  0% {
+    filter: blur(10px);
   }
-  to {
-    backdrop-filter: blur(3px);
+  100% {
+    filter: blur(2px);
   }
 }
+
 
 .hero-content h2 {
   font-size: 3.5em;
