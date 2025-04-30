@@ -15,7 +15,11 @@ header {
   text-align: center;
 }
 
-/* Navigation */
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
 nav a {
   color: white;
   margin: 0 1em;
@@ -27,7 +31,81 @@ main {
   padding: 2em;
 }
 
-/* Footer */
+/* Hero Section */
+.hero {
+  background: url('assets/images/hero-bg.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 5em 2em;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin: 0.5em 0;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+}
+
+.cta-button {
+  background-color: #007acc;
+  color: white;
+  padding: 0.7em 2em;
+  text-decoration: none;
+  font-size: 1.1em;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #005f99;
+}
+
+/* About Me Section */
+.about-me {
+  margin-top: 3em;
+  text-align: center;
+}
+
+.about-me h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.about-me p {
+  font-size: 1.1em;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Resume Download Section */
+#resume {
+  text-align: center;
+  margin: 3em 0;
+}
+
+#resume h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+#resume button {
+  padding: 10px 20px;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+#resume button:hover {
+  background-color: #005f99;
+}
+
+/* Footer Section */
 footer {
   background: #222;
   color: white;
@@ -36,6 +114,15 @@ footer {
   position: fixed;
   width: 100%;
   bottom: 0;
+}
+
+footer a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #005f99;
 }
 
 /* Project Image Styling */
