@@ -154,6 +154,25 @@ nav a:hover {
   margin: 0 auto;
 }
 
+/* Profile Image Styling */
+.profile-img {
+  width: 150px; /* Adjust as needed */
+  height: 150px;
+  border-radius: 50%; /* This makes it circular */
+  object-fit: cover; /* Ensures the image fits within the circle */
+  margin-bottom: 1em; /* Adds space between the image and the text */
+}
+
+/* About Me Text Section */
+.about-me-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
+}
+
+
 /* Resume Section */
 #resume {
   text-align: center;
