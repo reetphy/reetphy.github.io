@@ -6,9 +6,98 @@
   <title>Reet Chandra – Data Analyst Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+    }
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+    header nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+    }
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+      background-color: #2d3e50;
+      color: white;
+    }
+    .hero-content {
+      text-align: center;
+    }
+    .cta-button {
+      background-color: #ff5c8d;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+      margin-top: 20px;
+    }
+    .cta-button:hover {
+      background-color: #ff3e6e;
+    }
+
+    /* Main Layout */
+    .main-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 50px 20px;
+    }
+    .left-panel {
+      flex: 1;
+      padding-right: 30px;
+      text-align: center;
+    }
+    .left-panel img {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+    .right-panel {
+      flex: 2;
+    }
+    .right-panel h2 {
+      font-size: 2em;
+    }
+
+    .about-me p {
+      font-size: 1.1em;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #333;
+      color: white;
+      padding: 10px;
+    }
+  </style>
 </head>
 <body>
-  <!-- Header Section with Navigation Bar -->
+  <!-- Header Section -->
   <header>
     <div class="container">
       <h1>Reet Chandra</h1>
@@ -23,24 +112,40 @@
     </div>
   </header>
 
-  <!-- Main Section with Left and Right Layout -->
-  <section class="main-section">
-    <!-- Left Section: About Me -->
-    <div class="left-section">
-      <h2>About Me</h2>
-      <p>
-        I am a project manager with a passion for delivering impactful solutions. With years of experience leading teams, managing timelines, and collaborating with stakeholders, I strive to bring innovative ideas to life. I believe in the power of effective communication and a well-organized approach to problem-solving.
-      </p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Transforming Data into Insights</h2>
+      <a href="projects.html" class="cta-button">See My Work</a>
+    </div>
+  </section>
+
+  <!-- Main Content Section -->
+  <section class="main-container">
+    <!-- Left Panel -->
+    <div class="left-panel">
+      <img src="your-profile-image.jpg" alt="Reet Chandra" />
+      <h3>Reet Chandra</h3>
+      <p>Data Analyst</p>
     </div>
 
-    <!-- Right Section: Tagline -->
-    <div class="right-section">
-      <h3>Your Project Success, Our Commitment</h3>
+    <!-- Right Panel -->
+    <div class="right-panel">
+      <h2>About Me</h2>
       <p>
-        I specialize in driving projects that create value and foster growth. With an eye for detail and a focus on strategic goals, I ensure every project reaches its full potential.
+        I am a passionate data analyst skilled in Python, SQL, and data visualization tools. With experience working on diverse data sets, I help organizations make data-driven decisions.
       </p>
-      <a href="#contact" class="cta-button">Contact Me</a>
+      <p>
+        I am always eager to take on new challenges, analyze complex problems, and communicate insights clearly and effectively to drive business impact.
+      </p>
     </div>
+  </section>
+
+  <!-- Resume Download Section -->
+  <section id="resume">
+    <h2>Download My Resume</h2>
+    <p>Click below to download my latest resume in PDF format.</p>
+    <a href="resume.pdf" download class="cta-button">Download Resume</a>
   </section>
 
   <!-- Footer Section -->
