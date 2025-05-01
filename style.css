@@ -40,6 +40,12 @@ nav a:hover {
   color: #007acc;
 }
 
+nav a.active {
+  border-bottom: 2px solid #ff3e6e;
+  color: #ff3e6e;
+}
+
+
 .hero {
   background: url('assets/images/hero-bg-3.jpg') no-repeat center center/cover;
   color: white;
