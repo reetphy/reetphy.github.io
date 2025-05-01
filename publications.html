@@ -3,11 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Publications – Reet Chandra</title>
+  <title>Reet Chandra – Publications</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
   <style>
     body {
       font-family: 'Poppins', sans-serif;
@@ -40,30 +39,43 @@
       text-decoration: underline;
     }
 
-    .publications-container {
-      padding: 50px 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    .content-container {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 0 20px;
     }
 
-    .publication-item {
-      background-color: white;
+    .content-container h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #2d3e50;
+    }
+
+    .publication {
+      background-color: #fff;
       padding: 20px;
-      margin: 15px 0;
-      width: 70%;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
+      margin-bottom: 20px;
+      border-left: 5px solid #5c82ff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
-    .publication-item h3 {
-      margin-bottom: 10px;
+    .publication h3 {
+      margin-top: 0;
       color: #333;
     }
 
-    .publication-item p {
+    .publication p {
+      margin: 5px 0;
       color: #555;
-      line-height: 1.6;
+    }
+
+    .publication a {
+      color: #5c82ff;
+      text-decoration: none;
+    }
+
+    .publication a:hover {
+      text-decoration: underline;
     }
 
     footer {
@@ -71,6 +83,7 @@
       background-color: #333;
       color: white;
       padding: 10px;
+      margin-top: 50px;
     }
   </style>
 </head>
@@ -90,30 +103,36 @@
     </div>
   </header>
 
-  <!-- Publications Content Section -->
-  <section class="publications-container">
-    <div class="publication-item">
-      <h3>Satellite Lines of Helium-like Ions in Strongly Coupled Plasma Environment</h3>
-      <p><strong>Published in:</strong> Journal of Quantitative Spectroscopy and Radiative Transfer (ELSEVIER) – Jun 29, 2021</p>
-      <p>We report the transition energies and probabilities of satellite lines due to transitions of He-like ions embedded in a strongly coupled plasma (SCP) environment...</p>
+  <!-- Main Content Section -->
+  <section class="content-container">
+    <h2>Publications</h2>
+
+    <div class="publication">
+      <h3>Satellite lines of helium-like ions in strongly coupled plasma environment</h3>
+      <p><strong>Journal:</strong> Journal of Quantitative Spectroscopy and Radiative Transfer (Elsevier)</p>
+      <p><strong>Date:</strong> June 29, 2021</p>
+      <p><strong>DOI:</strong> <a href="https://doi.org/10.1016/j.jqsrt.2021.107712" target="_blank">10.1016/j.jqsrt.2021.107712</a></p>
     </div>
 
-    <div class="publication-item">
-      <h3>Ps− and H2+ Ions under Spatial Confinement</h3>
-      <p><strong>Published in:</strong> RGN Publication – Mar 27, 2018</p>
-      <p>The ground state energy eigenvalues of the spatially confined symmetric three-body exotic ions Ps− and H2+ have been determined...</p>
+    <div class="publication">
+      <h3>Ps⁻ and H₂⁺ Ions under Spatial Confinement</h3>
+      <p><strong>Publisher:</strong> RGN Publication</p>
+      <p><strong>Date:</strong> March 27, 2018</p>
+      <p><strong>DOI:</strong> <a href="https://doi.org/10.1007/s10773-018-3701-2" target="_blank">10.1007/s10773-018-3701-2</a></p>
     </div>
 
-    <div class="publication-item">
-      <h3>Explicitly Correlated Variational Estimates of the Energy Levels of Negative Hydrogen Ion under Spatial Confinement</h3>
-      <p><strong>Published in:</strong> International Journal of Quantum Chemistry (Wiley Publication) – Feb 7, 2018</p>
-      <p>Comprehensive investigations on the structural modifications of negative hydrogen ion within an impenetrable spherical domain have been performed...</p>
+    <div class="publication">
+      <h3>Explicitly correlated variational estimates of the energy levels of negative hydrogen ion under spatial confinement</h3>
+      <p><strong>Journal:</strong> International Journal of Quantum Chemistry (Wiley)</p>
+      <p><strong>Date:</strong> February 7, 2018</p>
+      <p><strong>DOI:</strong> <a href="https://doi.org/10.1002/qua.25456" target="_blank">10.1002/qua.25456</a></p>
     </div>
 
-    <div class="publication-item">
-      <h3>Structural Properties of Lithium Atom under Weakly Coupled Plasma Environment</h3>
-      <p><strong>Published in:</strong> Physics of Plasmas (AIP) – Apr 19, 2016</p>
-      <p>The Rayleigh-Ritz variational technique with a Hylleraas basis set is being tested for the first time to estimate the structural modifications of a lithium atom embedded in a weakly coupled plasma...</p>
+    <div class="publication">
+      <h3>Structural properties of lithium atom under weakly coupled plasma environment</h3>
+      <p><strong>Journal:</strong> Physics of Plasmas (AIP)</p>
+      <p><strong>Date:</strong> April 19, 2016</p>
+      <p><strong>DOI:</strong> <a href="https://doi.org/10.1063/1.4946878" target="_blank">10.1063/1.4946878</a></p>
     </div>
   </section>
 
