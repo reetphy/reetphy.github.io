@@ -208,7 +208,7 @@ nav a:hover {
   font-size: 1.2em;
   line-height: 1.6;
   max-width: 800px;
-  margin: 0 auto;
+  /* margin: 0 auto */;
 }
 
 /* About Me Section */
