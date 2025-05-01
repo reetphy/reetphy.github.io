@@ -56,13 +56,10 @@
 
     .certification-item {
       display: flex;
-      align-items: center;
       background-color: #fff;
-      padding: 20px;
-      margin: 10px 0;
       border-radius: 5px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      text-align: left;
+      overflow: hidden;
       transition: transform 0.3s;
     }
 
@@ -70,22 +67,36 @@
       transform: translateY(-10px);
     }
 
-    .certification-item img {
-      width: 80px;
-      height: 80px;
-      object-fit: cover;
-      margin-right: 20px;
+    .card-left {
+      background-color: #f0f0f0;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 150px;
     }
 
-    .certification-item h3 {
+    .card-left img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+    }
+
+    .card-right {
+      padding: 20px;
+      text-align: left;
+      flex: 1;
+    }
+
+    .card-right h3 {
       font-size: 1.5em;
       margin-bottom: 10px;
     }
 
-    .certification-item p {
+    .card-right p {
       font-size: 1.1em;
       color: #555;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
     }
 
     .cta-button {
@@ -95,6 +106,8 @@
       text-decoration: none;
       border-radius: 5px;
       font-weight: 600;
+      display: inline-block;
+      margin-top: 10px;
     }
 
     .cta-button:hover {
@@ -130,8 +143,10 @@
     <div class="certifications">
       <!-- CS50P Certification -->
       <div class="certification-item">
-        <img src="assets/images/CS50P.png" alt="CS50P Logo" />
-        <div>
+        <div class="card-left">
+          <img src="assets/images/CS50P.png" alt="CS50P Logo" />
+        </div>
+        <div class="card-right">
           <h3>CS50P - Introduction to Programming with Python</h3>
           <p><strong>Issued by:</strong> CS50, Harvard University </p>
           <p><strong>Date Issued:</strong> April, 2025</p>
@@ -139,11 +154,13 @@
           <a href="https://www.edx.org/course/cs50s-introduction-to-programming-with-python" target="_blank" class="cta-button">View Certificate</a>
         </div>
       </div>
-      
+
       <!-- PMP Certification -->
       <div class="certification-item">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Project_Management_Professional_Logo.svg/1200px-Project_Management_Professional_Logo.svg.png" alt="PMP Logo" />
-        <div>
+        <div class="card-left">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Project_Management_Professional_Logo.svg/1200px-Project_Management_Professional_Logo.svg.png" alt="PMP Logo" />
+        </div>
+        <div class="card-right">
           <h3>PMP - Project Management Professional</h3>
           <p><strong>Issued by:</strong> Project Management Institute (PMI)</p>
           <p><strong>Date Issued:</strong> August, 2024</p>
