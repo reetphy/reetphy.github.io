@@ -2,137 +2,125 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Publications | Reet Chandra</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publications – Reet Chandra</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
     body {
+      font-family: 'Poppins', sans-serif;
       margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #f8f9fa;
-      color: #212529;
+      padding: 0;
+      background-color: #f4f4f4;
     }
 
     header {
-      background-color: #fff;
-      border-bottom: 1px solid #ddd;
-      padding: 1rem 2rem;
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
     }
 
-    header nav ul {
-      list-style: none;
+    header .container {
       display: flex;
-      gap: 1.5rem;
-      margin: 0;
-      padding: 0;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
     }
 
-    header nav ul li a {
+    header nav a {
+      color: white;
       text-decoration: none;
-      color: #333;
+      margin: 0 15px;
       font-weight: 600;
     }
 
-    header nav ul li a.active {
-      color: #007bff;
+    header nav a:hover {
+      text-decoration: underline;
     }
 
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+    .publications-container {
+      padding: 50px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-      color: #000;
-    }
-
-    .publication {
-      background: #ffffff;
-      border: 1px solid #ddd;
+    .publication-item {
+      background-color: white;
+      padding: 20px;
+      margin: 15px 0;
+      width: 70%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
 
-    .publication h2 {
-      font-size: 1.25rem;
-      margin: 0 0 0.5rem 0;
+    .publication-item h3 {
+      margin-bottom: 10px;
       color: #333;
     }
 
-    .publication p {
-      margin: 0.25rem 0;
-      line-height: 1.5;
+    .publication-item p {
+      color: #555;
+      line-height: 1.6;
     }
 
     footer {
       text-align: center;
-      padding: 1rem 0;
-      background-color: #fff;
-      border-top: 1px solid #ddd;
-      font-size: 0.9rem;
-      color: #666;
-      margin-top: 3rem;
+      background-color: #333;
+      color: white;
+      padding: 10px;
     }
   </style>
 </head>
 <body>
-
-  <!-- Header -->
+  <!-- Header Section -->
   <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="publications.html" class="active">Publications</a></li>
-        <!-- Add other pages here -->
-      </ul>
-    </nav>
+    <div class="container">
+      <h1>Reet Chandra</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.pdf" target="_blank">Resume</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="publications.html">Publications</a>
+        <a href="degree.html">Education</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- Main Content -->
-  <main>
-    <h1>Publications</h1>
-
-    <div class="publication">
-      <h2>Satellite lines of helium-like ions in strongly coupled plasma environment</h2>
-      <p><strong>Journal:</strong> Journal of Quantitative Spectroscopy and Radiative Transfer (Elsevier)</p>
-      <p><strong>Date:</strong> June 29, 2021</p>
-      <p>We report the transition energies and probabilities of satellite lines due to transitions of He-like ions embedded in a strongly coupled plasma (SCP) environment. Using the ion-sphere (IS) model to simulate SCP, both relativistic (MCDF using GRASP2K) and non-relativistic (Hylleraas basis) results are presented. Good agreement with experimental data is observed. An empirical relation to estimate partial pressure in dense plasma is also proposed.</p>
+  <!-- Publications Content Section -->
+  <section class="publications-container">
+    <div class="publication-item">
+      <h3>Satellite Lines of Helium-like Ions in Strongly Coupled Plasma Environment</h3>
+      <p><strong>Published in:</strong> Journal of Quantitative Spectroscopy and Radiative Transfer (ELSEVIER) – Jun 29, 2021</p>
+      <p>We report the transition energies and probabilities of satellite lines due to transitions of He-like ions embedded in a strongly coupled plasma (SCP) environment...</p>
     </div>
 
-    <div class="publication">
-      <h2>Ps− and H₂⁺ Ions under Spatial Confinement</h2>
-      <p><strong>Journal:</strong> RGN Publication</p>
-      <p><strong>Date:</strong> March 27, 2018</p>
-      <p>Ground state energy eigenvalues of spatially confined Ps⁻ and H₂⁺ ions are computed using the Rayleigh-Ritz variational method in a spherical box. Hylleraas basis functions capture electron and proton correlations. Critical confinement radii and destabilization pressures are reported.</p>
+    <div class="publication-item">
+      <h3>Ps− and H2+ Ions under Spatial Confinement</h3>
+      <p><strong>Published in:</strong> RGN Publication – Mar 27, 2018</p>
+      <p>The ground state energy eigenvalues of the spatially confined symmetric three-body exotic ions Ps− and H2+ have been determined...</p>
     </div>
 
-    <div class="publication">
-      <h2>Explicitly correlated variational estimates of the energy levels of negative hydrogen ion under spatial confinement</h2>
-      <p><strong>Journal:</strong> International Journal of Quantum Chemistry (Wiley)</p>
-      <p><strong>Date:</strong> February 7, 2018</p>
-      <p>Using the Ritz method and Hylleraas-type basis, this study analyzes structural modifications of the H⁻ ion in a confined spherical region. Ground and excited states, including quasi-bound singly excited states, are reported, alongside thermodynamic pressure effects and angular correlation analysis.</p>
+    <div class="publication-item">
+      <h3>Explicitly Correlated Variational Estimates of the Energy Levels of Negative Hydrogen Ion under Spatial Confinement</h3>
+      <p><strong>Published in:</strong> International Journal of Quantum Chemistry (Wiley Publication) – Feb 7, 2018</p>
+      <p>Comprehensive investigations on the structural modifications of negative hydrogen ion within an impenetrable spherical domain have been performed...</p>
     </div>
 
-    <div class="publication">
-      <h2>Structural properties of lithium atom under weakly coupled plasma environment</h2>
-      <p><strong>Journal:</strong> Physics of Plasmas (AIP)</p>
-      <p><strong>Date:</strong> April 19, 2016</p>
-      <p>This work investigates lithium atoms in a weakly coupled plasma simulated via Debye-Hückel potential. Structural changes, ionization potential reduction, and variations in physical properties like dielectric susceptibility and magnetic shielding with plasma density are discussed using Hylleraas expansions.</p>
+    <div class="publication-item">
+      <h3>Structural Properties of Lithium Atom under Weakly Coupled Plasma Environment</h3>
+      <p><strong>Published in:</strong> Physics of Plasmas (AIP) – Apr 19, 2016</p>
+      <p>The Rayleigh-Ritz variational technique with a Hylleraas basis set is being tested for the first time to estimate the structural modifications of a lithium atom embedded in a weakly coupled plasma...</p>
     </div>
+  </section>
 
-  </main>
-
-  <!-- Footer -->
+  <!-- Footer Section -->
   <footer>
-    <p>&copy; 2025 Reet Chandra. All rights reserved.</p>
+    <p>© 2025 Reet Chandra</p>
+    <p>Contact: <a href="mailto:reetphy@gmail.com">reetphy@gmail.com</a> | <a href="tel:+917980623308">+91 79806 23308</a></p>
   </footer>
-
 </body>
 </html>
