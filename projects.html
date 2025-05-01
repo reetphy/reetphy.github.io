@@ -3,16 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Data Analysis Projects</title>
+  <title>Reet Chandra – Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+    }
+
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    header nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+    }
+
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 40px 20px;
+    }
+
     .projects-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 20px;
-      padding: 2em;
     }
-  
+
     .project-card {
       background: white;
       padding: 1.5em;
@@ -20,11 +60,11 @@
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
       transition: transform 0.2s;
     }
-  
+
     .project-card:hover {
       transform: scale(1.02);
     }
-  
+
     .card-img-top {
       width: 100%;
       height: auto;
@@ -34,105 +74,116 @@
       display: block;
       margin-bottom: 1em;
     }
-  
+
     .project-title {
       font-size: 1.25em;
       font-weight: bold;
       margin-bottom: 0.5em;
     }
-  
+
     .project-tools {
       font-size: 0.9em;
       color: #666;
       margin-bottom: 0.5em;
     }
-  
+
     .project-description {
       margin-bottom: 1em;
+      color: #444;
     }
-  
+
     .project-links a {
       text-decoration: none;
       color: white;
-      background-color: #007acc;
+      background-color: #5c82ff;
       padding: 0.4em 0.8em;
       border-radius: 5px;
       margin-right: 0.5em;
       font-size: 0.9em;
+      transition: background-color 0.3s;
     }
-  
+
     .project-links a:hover {
-      background-color: #005f99;
+      background-color: #ff3e6e;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      margin-top: 40px;
     }
   </style>
-
 </head>
 <body>
+
+  <!-- Header Section -->
   <header>
-    <h1>My Data Analysis Projects</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="resume.pdf" target="_blank">Resume</a>
-      <a href="certifications.html">Certifications</a>
-      <a href="publications.html">Publications</a>
-      <a href="degree.html">Education</a>
-    </nav>
+    <div class="container">
+      <h1>Reet Chandra</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.pdf" target="_blank">Resume</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="publications.html">Publications</a>
+        <a href="degree.html">Education</a>
+      </nav>
+    </div>
   </header>
 
+  <!-- Main Projects Section -->
   <main>
     <div class="projects-container">
 
-      <!-- 📊 Project 1 -->
+      <!-- Project 1 -->
       <div class="project-card">
-        <img src="assets/images/image1.png" alt="Investment Portfolio Tracker Image" class="card-img-top"/>
+        <img src="assets/images/image1.png" alt="Investment Portfolio Tracker" class="card-img-top" />
         <div class="project-title">Investment Portfolio Tracker</div>
         <div class="project-tools">Python · Streamlit · Plotly · yfinance</div>
         <div class="project-description">
           A dynamic web application to monitor and visualize investment portfolios. Users can create portfolios, track performance metrics, and compare returns with benchmarks like NIFTY 50 and SENSEX.
         </div>
         <div class="project-links">
-          <a href="https://github.com/reetphy/Investment-Portfolio-Tracker" target="_blank" rel="noopener noreferrer">
-            🔗 View Code
-          </a>
+          <a href="https://github.com/reetphy/Investment-Portfolio-Tracker" target="_blank">🔗 View Code</a>
         </div>
       </div>
 
-      <!-- 🛍️ Project 2 -->
+      <!-- Project 2 -->
       <div class="project-card">
-        <img src="assets/images/dashboard.jpg" alt="Customer Segmentation using RFM Analysis Image" class="card-img-top"/>
+        <img src="assets/images/dashboard.jpg" alt="Customer Segmentation using RFM Analysis" class="card-img-top" />
         <div class="project-title">Customer Segmentation using RFM Analysis</div>
         <div class="project-tools">Python · PowerBI · Pandas · Seaborn · Matplotlib</div>
         <div class="project-description">
           Performed RFM (Recency, Frequency, Monetary) analysis on e-commerce data to segment customers, aiding in targeted marketing strategies.
         </div>
         <div class="project-links">
-          <a href="https://github.com/reetphy/Customer-Segmentation-RFM-Ecommerce" target="_blank" rel="noopener noreferrer">
-            🔗 View Code
-          </a>
+          <a href="https://github.com/reetphy/Customer-Segmentation-RFM-Ecommerce" target="_blank">🔗 View Code</a>
         </div>
       </div>
 
-      <!-- 🗃️ Project 3 -->
+      <!-- Project 3 -->
       <div class="project-card">
-        <img src="assets/images/image3.jpeg" alt="Exploratory and Advanced SQL Data Analysis Image" class="card-img-top"/>
+        <img src="assets/images/image3.jpeg" alt="SQL Data Analysis" class="card-img-top" />
         <div class="project-title">Exploratory and Advanced SQL Data Analysis</div>
         <div class="project-tools">SQL</div>
         <div class="project-description">
           Leveraged SQL to perform comprehensive data analysis on sales, customers, and products, including EDA and advanced analytics to uncover business insights.
         </div>
         <div class="project-links">
-          <a href="https://github.com/reetphy/Exploratory-and-Advanced-SQL-Data-Analysis" target="_blank" rel="noopener noreferrer">
-            🔗 View Code
-          </a>
+          <a href="https://github.com/reetphy/sql-sales-analysis" target="_blank">🔗 View Code</a>
         </div>
       </div>
 
     </div>
   </main>
 
+  <!-- Footer Section -->
   <footer>
     <p>© 2025 Reet Chandra</p>
+    <p>Contact: <a href="mailto:reetphy@gmail.com">reetphy@gmail.com</a> | <a href="tel:+917980623308">+91 79806 23308</a></p>
   </footer>
+
 </body>
 </html>
